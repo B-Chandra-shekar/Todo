@@ -1,0 +1,85 @@
+@import '../scss/user-variables.scss';
+
+/*******************************
+ ****** Common styles **********
+*******************************/
+
+ul {
+    margin-bottom: 0 !important;
+    padding-left: 1.2rem;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.light-primary-background {
+    background: var(--very-light-primary-color);
+}
+
+.white-background {
+    background: var(--bs-white);
+}
+
+.top-box-shadow {
+    box-shadow: #0000001a 0px 4px 12px 6px, #0000000f 0px 2px 4px 3px;
+}
+
+.icon-color {
+    color: var(--icon-color) !important;
+}
+
+.link {
+
+    cursor: pointer;
+    color: darken($blue-text-color, 5%) !important;
+    text-decoration: none;
+
+    i {
+        position: relative;
+        left: 0;
+        transition: ease 0.3s all;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--blue-text-color) !important;
+
+        i {
+            left: 10px;
+            color: var(--blue-text-color) !important;
+        }
+    }
+}
+
+.line-height-15 {
+    line-height: 1.5;
+}
+
+.line-height-16 {
+    line-height: 1.6;
+}
+
+.line-height-18 {
+    line-height: 1.8;
+}
+
+.primary-box-shadow{
+    box-shadow: $primary-box-shadow;
+}
+
+.secondary-box-shadow{
+    box-shadow: $secondary-box-shadow;
+}
+
+.primary-border-radius{
+    border-radius: $primary-border-radius;
+}
+
+.secondary-border-radius{
+    border-radius: $secondary-border-radius;
+}
