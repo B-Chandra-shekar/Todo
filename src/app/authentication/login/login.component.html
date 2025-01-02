@@ -1,5 +1,17 @@
-.d-flex.flex-column.gap
-<mat-form-field class="example-full-width">
-    <mat-label>User</mat-label>
-    <input matInput>
-</mat-form-field>
+<div class="d-flex justify-content-center align-items-center  flex-column gap-1-0 h-100 w-100">
+    <img src="../../../assets/images/todo_logo.jfif" alt="" style="height: 50px; width: 50px;">
+    <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>password</mat-label>
+        <input matInput [type]="hide() ? 'password' : 'text'" />
+        <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide()">
+            <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+
+</div>
