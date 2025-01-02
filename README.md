@@ -1,2 +1,0 @@
-# Todo
-simple Todo project
