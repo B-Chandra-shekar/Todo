@@ -1,3 +1,5 @@
+@use "sass:string";
+
 @for $i from 0 through 100 {
 
     .min-vh-#{$i} {
@@ -20,10 +22,10 @@
 
 
 @function str-replace($string, $search, $replace) {
-    $index: str-index($string, $search);
+    $index: string.index($string, $search);
 
     @if $index {
-        @return str-slice($string, 1, $index - 1)+$replace+str-slice($string, $index+str-length($search));
+        @return string.slice($string, 1, $index - 1) + $replace + string.slice($string, $index + string.length($search));
     }
 
     @return $string;
