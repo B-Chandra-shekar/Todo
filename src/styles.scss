@@ -1,25 +1,12 @@
-/* Importing Bootstrap SCSS file. */
-
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
 
 @use 'bootstrap/scss/bootstrap';
 
 @use './assets/styles/utility-styles.scss';
 @use './assets/styles/user-animation.scss';
-
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
-
-html {
-  @include mat.theme((color: (theme-type: light,
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
-      ),
-      typography: Roboto,
-      density: 0,
-    ));
-}
+@use './assets/styles/user-material-theme.scss';
 
 html,
 body {
