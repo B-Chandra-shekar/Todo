@@ -6,7 +6,9 @@
 
 @use './assets/styles/utility-styles.scss';
 @use './assets/styles/user-animation.scss';
+@use './assets/styles/user-variables.scss';
 @use './assets/styles/user-material-theme.scss';
+@use './assets/styles/user-material-styles.scss';
 
 html,
 body {
@@ -15,5 +17,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Open sans', sans-serif !important;
+  font-size: 14px !important;
+  background-color: #f2f9ff;
 }
