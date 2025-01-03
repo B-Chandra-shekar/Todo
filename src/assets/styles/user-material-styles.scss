@@ -3,6 +3,7 @@
 :root {
     --mdc-outlined-text-field-container-shape: 22px;
     --mdc-outlined-text-field-focus-outline-color: #{var(--textField-focus-border-color)};
+    --mdc-icon-button-icon-color : #{var(--icon-color)};
 }
 
 /*******************************
@@ -47,7 +48,7 @@ mat-form-field {
         top: 19px;
         font-family: var(--default-font-family);
         font-size: 14px;
-        color: var(--textField-label-color);
+        color: var(--textField-label-color) !important;
     }
 
     .mat-mdc-form-field-flex {

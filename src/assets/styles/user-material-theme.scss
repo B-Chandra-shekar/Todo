@@ -7,7 +7,7 @@ html {
                 primary: mat.$azure-palette,
                 tertiary: mat.$blue-palette,
             ),
-            typography: Open sans,
+            typography: "'Open sans', sans-serif",
             density: 0,
         ));
 }
