@@ -1,19 +1,22 @@
 <div class="d-flex justify-content-center align-items-center  flex-column gap-1-0 h-100 w-100">
-    <div class="d-flex flex-column gap-1-0 w-50">
+    <form class="d-flex flex-column gap-1-0 w-50" [formGroup]="loginForm">
         <img src="../../../assets/images/To_do_logo.png" alt="" style="height: 150px; width: 150px;">
         <mat-form-field appearance="outline">
             <mat-label>Username</mat-label>
-            <input matInput>
+            <input matInput formControlName="userName" />
         </mat-form-field>
     
         <mat-form-field appearance="outline">
             <mat-label>password</mat-label>
-            <input matInput [type]="hide() ? 'password' : 'text'" />
+            <input matInput [type]="hide() ? 'password' : 'text'" formControlName="password" />
             <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
                 [attr.aria-pressed]="hide()">
                 <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
+    </form>
+    <div class="d-flex gap-0-1">
+        <button class="button button-secondary">Register</button>
+        <button class="button button-primary" (click)="handleLogin()">Login</button>
     </div>
-
 </div>
