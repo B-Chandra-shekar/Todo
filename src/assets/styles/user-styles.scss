@@ -56,16 +56,16 @@ ul {
     }
 }
 
-.line-height-15 {
-    line-height: 1.5;
+.heading-font-size {
+    font-size: var(--heading-font-size);
 }
 
-.line-height-16 {
-    line-height: 1.6;
+.sub-heading-font-size {
+    font-size: var(--sub-heading-font-size);
 }
 
-.line-height-18 {
-    line-height: 1.8;
+.gray-text{
+    color: var(--grey-font-color);
 }
 
 /********************************

@@ -19,6 +19,6 @@ body {
 body {
   margin: 0;
   font-family: 'Open sans', sans-serif !important;
-  font-size: 14px !important;
+  font-size: var(--default-font-size) !important;
   background-color: #f2f9ff;
 }
