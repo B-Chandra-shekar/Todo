@@ -1,8 +1,9 @@
 <div class="page-container">
     
-    <div class="d-flex flex-column gap-05-0">
+    <div class="d-flex flex-column gap-05-0 align-items-baseline">
         <span class="heading-font-size fw-600">Welcome Chandra</span>
         <span class="gray-text fw-500">Plan and manage all your daily activities from below.</span>
+        <button class="btn btn-primary" (click)="getWelcomeMessage()">Get message</button>
     </div>
 
     <app-todo-list></app-todo-list>
