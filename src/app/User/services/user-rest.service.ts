@@ -12,4 +12,8 @@ export class UserRestService {
   getHelloWorldBean(){
     return this.http.get('http://localhost:8080/hello-world-bean');
   }
+
+  executeHelloWorldWithPathVariable(name: string){
+    return this.http.get(`http://localhost:8080/hello-world/path-variable/${name}`);
+  }
 }
