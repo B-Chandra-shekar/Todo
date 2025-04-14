@@ -1,0 +1,1 @@
+import{Fb as p,Za as o,mb as t,nb as n}from"./chunk-SV2L5QK7.js";var a=class r{static \u0275fac=function(e){return new(e||r)};static \u0275cmp=o({type:r,selectors:[["app-error"]],decls:2,vars:0,template:function(e,s){e&1&&(t(0,"p"),p(1,"error works!"),n())},encapsulation:2})};export{a as ErrorComponent};

@@ -1,0 +1,1 @@
+import{Fb as i,Za as o,mb as n,nb as a}from"./chunk-SV2L5QK7.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-todo-detail"]],decls:2,vars:0,template:function(e,s){e&1&&(n(0,"p"),i(1,"todo-detail works!"),a())},encapsulation:2})};export{p as TodoDetailComponent};
